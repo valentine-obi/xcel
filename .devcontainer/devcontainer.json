@@ -1,0 +1,14 @@
+{
+    "name": "Node.js & MongoDB",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:16", // Base image for Node.js
+    "features": {
+        "mongodb": {} // Adds MongoDB to the container
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["mongodb.mongodb-vscode"] // MongoDB extension for VS Code
+        }
+    },
+    "forwardPorts": [27017], // Expose MongoDB's default port
+    "remoteUser": "vscode"
+}
